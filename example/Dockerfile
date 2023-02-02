@@ -2,6 +2,6 @@ FROM registry.access.redhat.com/ubi8/nginx-120
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
-COPY /app/ /usr/share/nginx/html
+#COPY /app/ /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
